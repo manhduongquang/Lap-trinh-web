@@ -1,0 +1,181 @@
+<odoo>
+    <template id="search-page" name="Search">
+        <t t-call="website.layout">
+            <link rel="stylesheet" type="text/css" href="/openacademy/static/src/css/search_style.css"/>
+            <script src="/openacademy/static/src/js/search_script.js"></script>
+            <div>
+                <div class="main-container">
+                    <div class="sub1-container">
+                        <div class="option">
+                            <li class="head">Danh mục thực phẩm</li>
+                            <ul class="list-category">
+                                <li class="category"><a href="">Bổ gan</a></li>
+                                <li class="category"><a href="">Bổ máu</a></li>
+                                <li class="category"><a href="">Hạ mỡ máu</a></li>
+                                <li class="category"><a href="">Sản phẩm khác</a></li>
+                                <li class="category"><a href="">Tai mũi họng</a></li>
+                                <li class="category"><a href="">Tăng cường miễn dịch</a></li>
+                                <li class="category"><a href="">Điều trị bênh gout</a></li>
+                                <li class="category"><a href="">Đại tràng</a></li>
+                            </ul>
+                        </div>
+                        <div class="option">
+                            <li class="head">Giá</li>
+                            <ul class="list-account">
+                                <li class="account"><a href="">0-500.000</a></li>
+                                <li class="account"><a href="">500.000-2.000.000</a></li>
+                                <li class="account"><a href="">2.000.000-5.000.000</a></li>
+                            </ul>
+                        </div>
+                        <div class="option">
+                            <li class="head">Xuất xứ</li>
+                            <ul class="list-left list-country">
+                                <li><input type="checkbox" name="VN"/><a href="">Việt Nam</a>
+                                </li>
+                                <li><input type="checkbox" name="Germany"/><a href="">Đức</a>
+                                </li>
+                                <li><input type="checkbox" name="France"/><a href="">Pháp</a>
+                                </li>
+                                <li><input type="checkbox" name="American"/><a href="">Mỹ</a>
+                                </li>
+                                <li><input type="checkbox" name="England"/><a href="">Anh</a>
+                                </li>
+                                <li><input type="checkbox" name="Japan"/><a href="">Nhật</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="option">
+                            <li class="head">Nguồn gốc</li>
+                            <ul class="list-left list-origin">
+                                <li><input type="checkbox" name="inland"/><a href="">Nội địa</a>
+                                </li>
+                                <li><input type="checkbox" name="import"/><a href="">Nhập khẩu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="option">
+                            <li class="head">Nhà sản xuất</li>
+                            <ul class="list-left list-producer">
+                                <li><input type="checkbox" name="viko8"/><a href="">Công ty Viko8</a>
+                                </li>
+                                <li><input type="checkbox" name="pride"/><a href="">Công ty Pride</a>
+                                </li>
+                                <li><input type="checkbox" name="abc"/><a href="">Công ty ABC</a>
+                                </li>
+                                <li><input type="checkbox" name="viko8x"/><a href="">Công ty Viko8x</a>
+                                </li>
+                                <li><input type="checkbox" name="pridex"/><a href="">Công ty Pridex</a>
+                                </li>
+                                <li><input type="checkbox" name="abcx"/><a href="">Công ty ABCx</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub2-container">
+                        <div class="searchbox">
+                            <label class="title-result">
+                                <span class="result">Kết quả tìm kiếm: “<span class="search-result">Thực phẩm chức năng”</span> (320 kết quả)</span>
+                            </label>
+                            <div class="search-sort">
+                                <span class="label-sort">Xắp xếp theo</span>
+                                <div class="dropdown sort">
+                                    <button class="btn dropdownbtn dropdown-toggle" type="button"
+                                            data-toggle="dropdown">
+                                        Theo giá:<span class="caret "></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li class="menu-li">
+                                            <a href="#">Giá: Từ cao đến thấp</a>
+                                        </li>
+                                        <li class="menu-li">
+                                            <a href="#">Giá: Từ thấp đến cao</a>
+                                        </li>
+                                        <li class="menu-li">
+                                            <a href="#">Tên sản phẩm: Từ A đến Z</a>
+                                        </li>
+                                        <li class="menu-li">
+                                            <a href="#">Tên sản phẩm: Từ Z đến A</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fiction">
+                            <span class="fiction-span">Tiêu chí đang chọn:</span>
+                            <!--<button class="btn fiction-btn" data-id="5">Xuất xứ: Pháp-->
+                                <!--<img class="img-remove" src="/openacademy/static/src/image/remove.png"/>-->
+                            <!--</button>-->
+                            <!--<button class="btn fiction-btn">Nguồn gốc: Nội địa-->
+                                <!--<img class="img-remove" src="/openacademy/static/src/image/remove.png"/>-->
+                            <!--</button>-->
+                        </div>
+                        <div class="list-product">
+                            <t t-foreach="range(0,6)" t-as="j">
+                                <a href="#"><t t-call="openacademy.component_search_list"></t></a>
+                            </t>
+                        </div>
+                        <div class="next navbar-bottom">
+                            <ul class="pagination pagination-sm">
+                                <li class="previous">
+                                    <a href="">&lt;</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li class="previous">
+                                    <a href="">&gt;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="setting-option navbar-fixed-bottom">
+                    <nav class="setting">
+                        <button class="btn set">Thiet lap lai</button>
+                        <button class="btn comp">Hoan tat</button>
+                    </nav>
+                    <nav class="option-bar">
+                        <div class="dropdown sort-button">
+                            <button class="btn dropdownbtn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="caret icon"></span>Sắp xếp
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="menu-li">
+                                    <a href="#">Giá: Từ cao đến thấp</a>
+                                </li>
+                                <li class="menu-li">
+                                    <a href="#">Giá: Từ thấp đến cao</a>
+                                </li>
+                                <li class="menu-li">
+                                    <a href="#">Tên sản phẩm: Từ A đến Z</a>
+                                </li>
+                                <li class="menu-li">
+                                    <a href="#">Tên sản phẩm: Từ Z đến A</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown filter">
+                            <button class="btn btn-filter" type="button">
+                                <span class="glyphicon glyphicon-filter icon"></span>Bộ lọc
+                            </button>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+            <t t-call="openacademy.footer"></t>
+        </t>
+    </template>
+</odoo>

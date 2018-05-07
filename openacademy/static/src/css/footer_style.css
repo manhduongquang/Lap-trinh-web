@@ -1,0 +1,172 @@
+@import '/openacademy/static/src/css/font.css';
+
+.footer {
+    width: 100%;
+    height: 462px;
+}
+
+.footer-top {
+    display: flex;
+    object-fit: contain;
+    background-color: #0abab5;
+    padding: 28px 7%;
+}
+
+.icon-mail {
+    width: 47px;
+    height: 45px;
+    object-fit: contain;
+    float: left;
+    margin-right: 19px;
+}
+
+.img-mail {
+    width: 100%;
+}
+
+.label-regist {
+    width: 390px;
+    height: 46px;
+    object-fit: contain;
+    font-family: SFProDisplay;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-right: 42px;
+}
+
+.label-regist > p {
+    padding: 0;
+    margin: 0;
+}
+
+.input-mail {
+    width: 513px;
+    height: 44px;
+    margin-right: 8px;
+}
+
+.input-mail > input {
+    width: 100%;
+    height: 100%;
+}
+
+.button-regist {
+    width: 132px;
+    height: 43px;
+}
+
+.button-regist > button {
+    width: 100%;
+    height: 100%;
+    background-color: #0abab5;
+    object-fit: contain;
+    border-radius: 4px;
+    border: solid 1px #fffefe;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff !important;
+}
+
+.footer-bottom {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 7%;
+}
+
+.customer-sp {
+    width: 203px;
+    margin-right: 47px;
+}
+
+.label-footer-bottom {
+    height: 20px;
+    object-fit: contain;
+    font-family: SFProDisplay;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 10px;
+}
+    .button-regist>button:hover{
+        color: #fff;
+        background-color: #0aba91;
+    }
+
+.menu-li {
+    padding: 0;
+    object-fit: contain;
+    font-family: SFProDisplay;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.menu-li li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.hotline {
+    font-family: SFProDisplay-Semibold;
+    color: #0abab5;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pay {
+    width: 198px;
+    height: 93px;
+    object-fit: contain;
+}
+
+.img-pay {
+    width: 100%;
+    height: 100%;
+}
+
+.fb-zalo {
+    width: 170px;
+    height: 57px;
+    object-fit: contain;
+}
+
+.img-fb-zalo {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 164px;
+    height: 105px;
+    object-fit: contain;
+}
+
+.img-app {
+    width: 100%;
+    height: 100%;
+}

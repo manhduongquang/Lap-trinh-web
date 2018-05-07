@@ -1,0 +1,18 @@
+<odoo>
+    <template id="component_search_list" name="Item">
+             <link rel="stylesheet" type="text/css" href="/openacademy/static/src/css/component-search-list-style.css"/>
+            <div class="item-search">
+                <div class="item">
+                    <img class="img-item" src="/openacademy/static/src/image/item.png"/>
+                </div>
+                <div class="info">
+                    <div class="introduce">RULE1 5,03lbs(2,288kg) Tặng bình 3 ngăn 180k</div>
+                    <div class="price">400.000đ</div>
+                    <div class="below-price">
+                        <div class="last-price"><del>900.000đ</del></div>
+                        <div class="sale">-50%</div>
+                    </div>
+                </div>
+            </div>
+    </template>
+</odoo>

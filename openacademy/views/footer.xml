@@ -1,0 +1,69 @@
+<odoo>
+    <template id="footer" name="footer">
+            <link href="/openacademy/static/src/css/footer_style.css" rel="stylesheet" type="text/css" media="all"/>
+            <script src="/openacademy/static/src/js/footer_script.js"></script>
+
+            <div class="footer nav-fixed-bottom">
+                <div class="footer-top">
+                    <div class="icon-mail">
+                        <img class="img-mail" src="openacademy/static/src/image/icons-8-send-mass-email@3x.png"/>
+                    </div>
+                    <div class="label-regist">
+                        <p>Đăng ký nhận bản tin VEZO
+                            <br/>
+                            Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn
+                        </p>
+                    </div>
+                    <div class="input-mail">
+                        <input type="text" class="form-control" placeholder="Địa chỉ email của bạn"/>
+                    </div>
+                    <div class="button-regist">
+                        <button type="submit" class="btn">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="customer-sp">
+                        <label class="label-footer-bottom">Hỗ trợ khách hàng</label>
+                        <ul class="menu-li">
+                            <li><a href="#"><span class="hotline">Hotline: 1900-6035</span></a></li>
+                            <li><a href="#">(1000đ/phút , 8-21h kể cả T7, CN)</a></li>
+                            <li><a href="#">Các câu hỏi thường gặp</a></li>
+                            <li><a href="#">Gửi yêu cầu hỗ trợ</a></li>
+                            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Hướng dẫn mua trả góp</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer-sp">
+                        <label class="label-footer-bottom">Về Vezo.vn</label>
+                        <ul class="menu-li">
+                            <li><a href="#">Giới thiệu VEZO.vn</a></li>
+                            <li><a href="#">Tuyển Dụng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer-sp">
+                        <label class="label-footer-bottom">Phương thức thanh toán</label>
+                        <div class="pay">
+                            <a href="#"><img class="img-pay" src="/openacademy/static/src/image/pay-card.png"/></a>
+                        </div>
+                    </div>
+                    <div class="customer-sp">
+                        <label class="label-footer-bottom">Kết nối với chúng tôi</label>
+                        <div class="fb-zalo">
+                            <a href="#"><img class="img-fb-zalo" src="/openacademy/static/src/image/fb-zalo.png"/></a>
+                        </div>
+                    </div>
+                    <div class="customer-sp">
+                        <label class="label-footer-bottom">Tải ứng dụng di động</label>
+                        <div class="app">
+                            <a href="#"><img class="img-app" src="/openacademy/static/src/image/app.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </template>
+</odoo>
